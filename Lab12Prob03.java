@@ -13,8 +13,8 @@ public class Lab12Prob03 {
 		if (word.length() == 1) { // Base Case
 			return word;
 		} else {
-			// Recursive call to the function
-			return word.substring(word.length() - 1) + reverseString(word.substring(0, word.length() - 1));
+			// Recursive call to the helper function
+			return reverseStringHelper(word, word.length() - 1);
 		}
 	}
 	
